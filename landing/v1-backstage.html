@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="../vrlab.png">
 <style>
   :root{
     color-scheme: dark;
@@ -48,7 +49,8 @@
     border-bottom: 1px solid var(--line);
   }
   .nav{ display: flex; align-items: center; justify-content: space-between; padding-block: 14px; }
-  .logo{ display:flex; align-items:baseline; gap:8px; font-family: var(--font-display); font-size: 1.35rem; letter-spacing: .04em; text-decoration:none; }
+  .logo{ display:flex; align-items:center; gap:10px; font-family: var(--font-display); font-size: 1.35rem; letter-spacing: .04em; text-decoration:none; }
+  .logo img{ width:36px; height:36px; border-radius:50%; object-fit:cover; flex-shrink:0; }
   .logo span{ color: var(--red); }
   .nav-links{ display:flex; align-items:center; gap: 28px; list-style:none; margin:0; padding:0; }
   .nav-links a{ text-decoration:none; font-size: .92rem; font-weight:600; text-transform:uppercase; letter-spacing:.06em; color: var(--muted); transition: color .2s; }
@@ -256,7 +258,7 @@
 
 <header>
   <div class="wrap nav">
-    <a class="logo" href="#top">VR<span>·</span>MUSIC LAB</a>
+    <a class="logo" href="#top"><img src="../vrlab.png" alt="VR Music Lab">VR<span>·</span>MUSIC LAB</a>
     <ul class="nav-links">
       <li><a href="#corsi">Corsi</a></li>
       <li><a href="#chi-siamo">Chi siamo</a></li>
@@ -348,8 +350,8 @@
         <h2>Prenota la<br>tua prova</h2>
         <p>Scrivici due righe: quale strumento ti interessa e quando puoi venire in sede. Ti rispondiamo su WhatsApp per fissare la lezione di prova.</p>
         <ul class="info-list">
-          <li><svg><use href="#icon-whatsapp"/></svg><span><strong>WhatsApp:</strong> +39 000 000 0000<br><small style="color:var(--muted)">TODO — inserire il numero reale della scuola</small></span></li>
-          <li><svg><use href="#icon-pin"/></svg><span>Verona, VR — indirizzo esatto in sede</span></li>
+          <li><svg><use href="#icon-whatsapp"/></svg><span><strong>WhatsApp:</strong> +39 340 267 8814</span></li>
+          <li><svg><use href="#icon-pin"/></svg><span>Via Beniamino Romagnoli 13, Verona (VR)</span></li>
           <li><svg><use href="#icon-clock"/></svg><span>Lun–Ven 15:00–21:00 · Sab 10:00–13:00</span></li>
         </ul>
         <div class="socials">
@@ -396,11 +398,10 @@
         <h2>Vieni a trovarci</h2>
       </div>
       <div class="map-card">
-        <!-- TODO: sostituire "Verona" con l'indirizzo esatto della scuola -->
-        <iframe src="https://www.google.com/maps?q=Verona,+VR&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mappa VR Music Lab"></iframe>
+        <iframe src="https://www.google.com/maps?q=Via+Beniamino+Romagnoli+13,+Verona,+VR&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mappa VR Music Lab"></iframe>
         <div class="map-caption">
-          <div><b>VR Music Lab</b><p>Verona, VR — indirizzo esatto in sede</p></div>
-          <a class="btn btn-ghost" href="https://www.google.com/maps?q=Verona,+VR" target="_blank" rel="noopener">Apri in Google Maps</a>
+          <div><b>VR Music Lab</b><p>Via Beniamino Romagnoli 13, Verona (VR)</p></div>
+          <a class="btn btn-ghost" href="https://www.google.com/maps?q=Via+Beniamino+Romagnoli+13,+Verona,+VR" target="_blank" rel="noopener">Apri in Google Maps</a>
         </div>
       </div>
     </div>
@@ -426,8 +427,7 @@
     a.addEventListener('click', function(){ document.body.classList.remove('nav-open'); });
   });
 
-  // ---- TODO: sostituire con il numero WhatsApp reale della scuola (formato internazionale, senza + o spazi) ----
-  var WHATSAPP_NUMBER = "390000000000";
+  var WHATSAPP_NUMBER = "393402678814";
 
   document.getElementById('waForm').addEventListener('submit', function(e){
     e.preventDefault();

@@ -4,11 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VR Music Lab — Anteprima versioni</title>
+<link rel="icon" type="image/png" href="../vrlab.png">
 <style>
   :root{ color-scheme: dark; --bg:#0b0a0a; --surface:#161211; --red:#e2231a; --text:#f4ece5; --muted:#a3908a; --line:#2e2320; }
   *{ box-sizing:border-box; }
   body{ margin:0; background:var(--bg); color:var(--text); font-family:"Segoe UI",Arial,sans-serif; line-height:1.6; padding: clamp(24px,5vw,56px) clamp(18px,4vw,40px); }
-  h1{ font-size: clamp(1.8rem,4vw,2.6rem); margin: 0 0 8px; }
+  h1{ display:flex; align-items:center; gap:16px; font-size: clamp(1.8rem,4vw,2.6rem); margin: 0 0 8px; }
+  h1 img{ width:44px; height:44px; border-radius:50%; object-fit:cover; flex-shrink:0; }
   p.lead{ color:var(--muted); max-width:60ch; margin: 0 0 40px; }
   .grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap:20px; max-width:1100px; }
   a.card{
@@ -22,7 +24,7 @@
 </style>
 </head>
 <body>
-  <h1>VR Music Lab — 4 versioni della landing page</h1>
+  <h1><img src="../vrlab.png" alt="VR Music Lab">VR Music Lab — 4 versioni della landing page</h1>
   <p class="lead">Stessa palette nera e rossa, stessi contenuti (corsi, form WhatsApp, mappa), quattro stili diversi. Apri ciascuna versione, scegli la tua preferita.</p>
   <div class="grid">
     <a class="card" href="v1-backstage.html"><b>1 · <span>Backstage</span></b>Poster da concerto: font condensato, luci di scena, line-up dei corsi in stile scaletta.</a>
