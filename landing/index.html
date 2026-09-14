@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VR Music Lab — Anteprima versioni</title>
+<style>
+  :root{ color-scheme: dark; --bg:#0b0a0a; --surface:#161211; --red:#e2231a; --text:#f4ece5; --muted:#a3908a; --line:#2e2320; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--bg); color:var(--text); font-family:"Segoe UI",Arial,sans-serif; line-height:1.6; padding: clamp(24px,5vw,56px) clamp(18px,4vw,40px); }
+  h1{ font-size: clamp(1.8rem,4vw,2.6rem); margin: 0 0 8px; }
+  p.lead{ color:var(--muted); max-width:60ch; margin: 0 0 40px; }
+  .grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap:20px; max-width:1100px; }
+  a.card{
+    display:block; text-decoration:none; color:inherit; border:1px solid var(--line); border-radius:10px;
+    padding:26px 22px; background:var(--surface); transition: border-color .2s, transform .2s;
+  }
+  a.card:hover{ border-color:var(--red); transform: translateY(-3px); }
+  a.card b{ display:block; font-size:1.2rem; margin-bottom:8px; }
+  a.card b span{ color:var(--red); }
+  a.card small{ color:var(--muted); font-size:.88rem; }
+</style>
+</head>
+<body>
+  <h1>VR Music Lab — 4 versioni della landing page</h1>
+  <p class="lead">Stessa palette nera e rossa, stessi contenuti (corsi, form WhatsApp, mappa), quattro stili diversi. Apri ciascuna versione, scegli la tua preferita.</p>
+  <div class="grid">
+    <a class="card" href="v1-backstage.html"><b>1 · <span>Backstage</span></b>Poster da concerto: font condensato, luci di scena, line-up dei corsi in stile scaletta.</a>
+    <a class="card" href="v2-studio.html"><b>2 · <span>Studio</span></b>Editoriale e minimal: serif elegante, molto spazio bianco (nero), form essenziale.</a>
+    <a class="card" href="v3-groove.html"><b>3 · <span>Groove</span></b>Energico e giocoso: forme rotonde, badge "kit", pensata anche per famiglie.</a>
+    <a class="card" href="v4-vinyl.html"><b>4 · <span>Vinyl</span></b>Vintage anni '70/'80: disco in vinile, font da locandina d'epoca, programma da concerto.</a>
+  </div>
+</body>
+</html>
